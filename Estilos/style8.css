@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+body {
+    background-color:#092640;
+    background-size: cover; /* La imagen se ajustará al tamaño de la ventana del navegador */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* La imagen de fondo permanecerá fija en su lugar */
+}
+/* menu */
+.logo{
+    width: 6%;
+    margin-top: 40px;
+    margin-left: 50px;
+    padding: 25px ;
+  }
+.menu{
+    margin-left: 56%;
+    margin-top: -9%;
+  }
+  ul {
+  list-style: none;
+  background:#196db6;
+  margin-top: -4%;
+  z-index: 1;
+  }
+  
+  ul li {
+  display: inline-block;
+  position: relative;
+  }
+  .name{
+    background: #0d385e;
+  }
+  ul li a {
+  display: block;
+  padding: 25px 25px 25px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 21px;
+  border-radius: 1em;
+  }
+  ul li ul.micro_menu li {
+  display: block;
+  }
+  ul li ul.micro_menu {
+  border-radius: 1em;
+  width: 100%;
+  background: #0d385e;
+  position: absolute;
+  display: none;
+  }
+  ul li a:hover {
+  background: #124d80;
+  color: white;
+  }
+  ul li:hover ul.micro_menu {
+  display: block;
+  }
+
+/* fondo */
+.contenedor{
+    /* posicion de conteneror */
+    margin-top: 1%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/* al lade de los colores le podemos decir  colo (color 50%) esto toma la mitad de la pantalla */
+.fondo{
+    width: 25%;
+    background-color: #0000007c;
+    border: 2px solid #14B5D9;
+    border-radius: 1em;
+    overflow: hidden;
+    /* tamaño del cuadro y posicion */
+    /* arriba,izquierda,abajo,derecha */
+    padding: 30px 50px 20px 920px;
+    box-shadow: 9px 20px 37px black;
+    margin-top: 1%;
+}
+.titulo{
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 4%;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: -118%;
+}
+/* botones */
+.boton{
+    display: inline-block;
+    background: black;;
+    text-decoration: none;
+    border-bottom: 3px solid #14B5D9;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 9px 20px;
+    font-size: 20px;
+    margin-top: 1px;
+    margin-left: -100%;
+    transition: transform 0.3s, filter 0.3s;
+  }
+  
+  .boton:hover{
+    background: linear-gradient(0deg,#0c6e85, #000000);
+    box-shadow: 9px 10px 10px black;
+    Background-repeat: no-repeat;
+    border-bottom: 3px solid #14B5D9;
+    transform: scale(1.02);
+  }
+
+.info{
+    margin-top: 1%;
+    color: white;
+    font-size: 30px;
+    margin-left: -250%;
+    width: 349%;
+}
+
+.santi{
+    margin-top: 18%;
+    width: 38%;
+    margin-left: 52%;
+}
+.santi2{
+    margin-top: -28%;
+    width: 35%;
+    border-radius: 220px;
+    border-bottom: 4px solid #14B5D9;
+    margin-left: 5%;
+    box-shadow: 9px 10px 10px black;
+    height: 532px;
+    transition: transform 0.3s, filter 0.3s;
+}
+.santi2:hover{
+    filter: brightness(50%); /* Ajusta el brillo según tus preferencias */
+    transform: scale(1.02);
+}
+/* istagram */
+.ista{
+    color: white;
+    margin-left: 52%;
+    text-decoration: none;
+    width: 190px;
+    background-image: linear-gradient(to right, #ff8c00, #ff0000, #d53e92);
+    padding: 1px 10px; /* Añade algún relleno para mejorar la apariencia */
+    border-radius: 1em;
+}
+
+.juan{
+    margin-top: 14%;
+    width: 45%;
+}
+.juan2{
+    margin-top: -38%;
+    width: 45%;
+    border-radius: 220px;
+    border-bottom: 4px solid #14B5D9;
+    margin-left: 52%;
+    box-shadow: 9px 10px 10px black;
+    transition: transform 0.3s, filter 0.3s;
+}
+.ista2{
+    color: white;
+    text-decoration: none;
+    width: 190px;
+    background-image: linear-gradient(to right, #ff8c00, #ff0000, #d53e92);
+    padding: 1px 10px; /* Añade algún relleno para mejorar la apariencia */
+    border-radius: 1em;
+}
+.juan2:hover{
+    filter: brightness(50%); /* Ajusta el brillo según tus preferencias */
+    transform: scale(1.02);
+}
+.peña{
+    margin-top: 6%;
+    width: 45%;
+    margin-left: 52%;
+}
+
+.peña2{
+    z-index: -1;
+    margin-top: -37%;
+    width: 45%;
+    border-radius: 220px;
+    border-bottom: 4px solid #14B5D9;
+    margin-left: -2%;
+    box-shadow: 9px 10px 10px black;
+    display: block;
+    transition: transform 0.3s, filter 0.3s;
+}
+.peña2:hover{
+    filter: brightness(50%); /* Ajusta el brillo según tus preferencias */
+    transform: scale(1.02);
+}
+.ista3{
+    color: white;
+    margin-left: 52%;
+    text-decoration: none;
+    width: 190px;
+    background-image: linear-gradient(to right, #ff8c00, #ff0000, #d53e92);
+    padding: 1px 10px; /* Añade algún relleno para mejorar la apariencia */
+    border-radius: 1em;
+}
+footer {
+    background-color: #0f4676   ;
+    color: #fff;
+    text-align: center;
+    margin-top: 1%;
+    padding: 1em;
+    /* esto hace que te siga */
+    bottom: 0;
+    width: auto;
+  }
+/* una vez finalizada el diseño cambimaos a php */

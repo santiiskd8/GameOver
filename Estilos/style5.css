@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+body {
+  background-color:#092640;
+  background-size: cover; /* La imagen se ajustará al tamaño de la ventana del navegador */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* La imagen de fondo permanecerá fija en su lugar */
+}
+
+.logo{
+  width: 6%;
+  margin-top: 40px;
+  margin-left: 50px;
+  padding: 25px ;
+}
+
+.menu{
+  margin-left: 30%;
+  margin-top: -9%;
+}
+ul {
+list-style: none;
+background:#196db6;
+margin-top: -4%;
+z-index: 1;
+}
+
+ul li {
+display: inline-block;
+position: relative;
+}
+
+ul li a {
+display: block;
+padding: 25px 27px 25px;
+color: #ffffff;
+text-decoration: none;
+text-align: center;
+font-size: 21px;
+border-radius: 1em;
+}
+.name{
+  background: #0d385e;
+}
+ul li ul.micro_menu li {
+display: block;
+}
+ul li ul.micro_menu {
+border-radius: 1em;
+width: 100%;
+background: #0d385e;
+position: absolute;
+display: none;
+}
+ul li a:hover {
+background: #124d80;
+color: white;
+}
+ul li:hover ul.micro_menu {
+display: block;
+}
+
+#imagen-principal{
+  /*dispocicion adaptable a la pantalla*/
+  display: flex;
+  /*direcion del flex tipo columna*/
+  flex-direction: column;
+  /*alto del selector de 70*/
+  height: 70vh;
+  /*ancho*/
+  width: 99%;
+  /*configurar imagenes que vamos  a colocar*/
+  /*la imagen adapta al contorno*/
+  background-size: cover;
+  /*que la imagen no se repita*/
+  background-repeat: no-repeat;
+  /*pocicion de la imagen*/
+  background-position: center center;
+  /*animacion------> pass:*/
+  /*los porcentaje los agregamos por cualquier nombre y
+  la animation le asignamos los segundos*/
+  animation: galeria 10s ease infinite;
+}
+#imagen-principal{
+  background-color: #092640;
+  /*dispocicion adaptable a la pantalla*/
+  display: flex;
+  /*direcion del flex tipo columna*/
+  flex-direction: column;
+  /*alto del selector de 70*/
+  height: 100vh;
+  /*ancho*/
+  width: 100%;
+  /*configurar imagenes que vamos  a colocar*/
+  /*la imagen adapta al contorno*/
+  background-size: cover;
+  /*que la imagen no se repita*/
+  background-repeat: no-repeat;
+  /*pocicion de la imagen*/
+  background-position: center center;
+  /*animacion------> pass:*/
+  /*los porcentaje los agregamos por cualquier nombre y
+  la animation le asignamos los segundos*/
+  border-bottom: 2px solid #14B5D9;
+  animation: galeria 55s ease-in-out infinite;
+}
+/*hace accione en un determinado tiempo*/
+@keyframes galeria {
+  0%{
+    background-image: url("../Media/Medias/carrusel/mega logo.jpg");
+  }
+  15%{
+    background-image: url("../Media/carrusel/3.gif");
+  }
+  25%{
+    background-image: url("../Media/carrusel/crash\ bandicoot.jpg");
+  }
+  50%{
+    background-image: url("../Media/carrusel/stray.jpg");
+  }
+  55%{
+    background-image: url("../Media/carrusel/god\ of\ war.jpg");
+  }
+  60%{
+    background-image: url("../Media/carrusel/fortnite.jpg");
+  }
+  65%{
+    background-image: url("../Media/carrusel/spider-man\ 2.jpg");
+  }
+  70%{
+    background-image: url("../Media/carrusel/securuty\ breach.PNG");
+  }
+  75%{
+    background-image: url("../Media/carrusel/miles\ morales.PNG");
+  }
+  85%{
+    background-image: url("../Media/carrusel/Resident-Evil-4.jpg");
+  }
+  90%{
+    background-image: url("../Media/carrusel/the\ last\ of\ us\ part\ 1.png");
+  }
+  95%{
+    background-image: url("../Media/carrusel/crash\ bandicoot.jpg");
+  }
+  100%{
+    background-image: url("../Media/carrusel/mega\ logo.jpg");
+  }
+}
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  /* esto es para la sesparacion */
+  margin-left: 13%; /* Ajusta este margen para el espaciado entre las secciones */
+  margin-top: 2%;
+  margin-right: 13%;
+  margin-bottom: 2%;
+}
+
+.imagen-contenedor {
+  position: relative;
+}
+
+.informacion {
+  margin-top: 200;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 190px;
+  height: 93%;
+  background-color: #000000;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: right 0.3s ease-in-out;
+  z-index: 0; /* Cambiamos el valor de z-index para que la información esté detrás de la imagen */
+}
+
+#imagen {
+  height: 400px;
+  width: 220px;
+  border-radius: 9px;
+  box-shadow: black 4px 4px 4px;
+}
+
+.logos{
+  margin-top: -20px;
+  margin-left: -20px;
+  align-items: center;
+  display: block; /* Asegura que la imagen sea un bloque para controlar el margen inferior */
+  margin-bottom: 10px; /* Agrega un margen inferior a la imagen (ajusta según sea necesario) */
+  width: 120%;
+  height: 40%;
+}
+
+p {
+  margin-top: -20px; /* Elimina cualquier margen predeterminado del párrafo */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  font-size: 19px;
+}
+
+.cuadro{
+margin: 0 auto;
+margin-top: 2%;
+background-color: #0000007c;
+border-radius: 1em;
+border: 2px solid #14B5D9;
+height: 1%;
+width: 90%;
+display: flex;
+flex-direction: center;
+justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+  gap: 1px; /* Espacio entre las celdas */
+}
+
+.boton {
+font-family:Arial, Helvetica, sans-serif;
+font-size: 19px;
+display: inline-block;
+padding: 10px 20px;
+background-color: #050505;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s;
+border: 2px solid #14B5D9;
+margin-top: 20px;
+margin-left: 20%;
+}
+.boton:hover {
+  background-color:#14b5d91f;
+  color: #ffffff;
+}
+
+.titulo{
+  margin-top: 2%;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+.game{
+ color:  #0d85b6;
+}
+.over{
+color:  #c40d7b ;
+}
+/* pie de pagina */
+footer {
+  background-color: #0f4676   ;
+  color: #fff;
+  text-align: center;
+  padding: 1.8em;
+  bottom: 0;
+  width: auto;
+  margin-top: 2%;
+}
